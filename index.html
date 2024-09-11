@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Puppy Bowl - Humane Society</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Puppy Bowl!</h1>
+      <p>
+        Cheer for your favorite puppies as they compete in the cutest sporting
+        event ever!
+      </p>
+    </header>
+
+    <section id="form-section">
+      <h2>Add a New Puppy</h2>
+      <form id="new-player-form">
+        <input type="text" id="player-name" placeholder="Puppy Name" required />
+        <input type="text" id="player-breed" placeholder="Breed" required />
+        <input
+          type="url"
+          id="player-image-url"
+          placeholder="Image URL"
+          required
+        />
+        <select id="player-status">
+          <option value="bench">Bench</option>
+          <option value="field">Field</option>
+        </select>
+        <button type="submit">Add Player</button>
+      </form>
+    </section>
+
+    <main id="players-container">
+      <div class="loading" id="loading-spinner"></div>
+      <!-- Player cards will be dynamically inserted here -->
+    </main>
+
+    <footer>
+      <p>Humane Society &copy; 2024 - All Rights Reserved</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
